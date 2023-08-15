@@ -15,6 +15,10 @@ fn sum(a: i32, b: i32) -> i32 {
     a + b
 }
 
+fn mutiply(a: i32) -> i32 {
+    a * a
+}
+
 fn odd_even(a: i32) -> String {
     if a / 2 == 0 {
         format!("even number")
@@ -28,16 +32,18 @@ pub fn day_003() {
     if !cfg!(feature = "day_003") {return;}
 
     let answer = sum(1, 2);
-    println!("{}", answer);
+    println!("fn sum: {}", answer);
 
 
     let odd_even = odd_even(4);
-    println!("{}", odd_even);
+    println!("odd_even: {}", odd_even);
 
     let cal_area = area(Shapes::Rectangle(3.3, 3.3));
-    println!("{:.2}", cal_area);
+    println!("enum shapes: {:.2}", cal_area);
     let square_area = area(Shapes::Square(5.3));
-    println!("{:.2}", square_area);
+    println!("enum shapes: {:.2}", square_area);
 
-  
+    let pointer_multiply: fn(a: i32) -> i32 = mutiply;
+    let result = pointer_multiply(3);
+    println!("function pointer multiply: {}", result);
 }
