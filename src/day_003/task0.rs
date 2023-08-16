@@ -25,7 +25,7 @@ fn odd_even(a: i32) -> String {
     }
 }
 
-pub fn task0() {
+pub fn task30() {
 
     if !cfg!(feature = "task30") {return;}
 

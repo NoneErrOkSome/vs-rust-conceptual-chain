@@ -4,7 +4,7 @@
 // returning an error message in that case.
 
 
-pub fn task6() {
+pub fn task36() {
     if !cfg!(feature = "task36") {return;}
     println!("hahahahaha 36")
 

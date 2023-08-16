@@ -3,7 +3,7 @@
 // Call this function and print the result.
 
 
-pub fn task2() {
+pub fn task32() {
     if !cfg!(feature = "task32") {return;}
 
 }

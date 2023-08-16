@@ -3,6 +3,6 @@
 // Call this function and print the result.
 
 
-pub fn task7() {
+pub fn task37() {
     if !cfg!(feature = "task37") {return;}
 }

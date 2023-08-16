@@ -4,7 +4,7 @@
 // Use this higher-order function to apply the passed function to the integer.
 
 
-pub fn task4() {
+pub fn task34() {
     if !cfg!(feature = "task34") {return;}
     println!("hello");
     

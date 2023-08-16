@@ -14,7 +14,7 @@ fn area(shape: Shapes) -> f64 {
     }
 }
 
-pub fn task3() {
+pub fn task33() {
     if !cfg!(feature = "task33") {return;}
 
     let cal_area = area(Shapes::Rectangle(3.3, 3.3));
