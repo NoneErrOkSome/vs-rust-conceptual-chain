@@ -25,9 +25,9 @@ fn odd_even(a: i32) -> String {
     }
 }
 
-pub fn day_003() {
+pub fn task0() {
 
-    if !cfg!(feature = "day_003") {return;}
+    if !cfg!(feature = "task30") {return;}
 
     let answer = sum(1, 2);
     println!("fn sum: {}", answer);
