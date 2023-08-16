@@ -46,4 +46,13 @@ pub fn day_003() {
     let pointer_multiply: fn(a: i32) -> i32 = mutiply;
     let result = pointer_multiply(3);
     println!("function pointer multiply: {}", result);
+
+
+    let factorial = |n: u32| -> u32 {
+        (1..=n).product()
+        };
+    let n = 5;
+    println!("The factorial of {} is {}", n, factorial(n)); 
+
+    
 }
