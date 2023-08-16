@@ -10,6 +10,14 @@ fn area(shape: Shapes) -> f64 {
     }
 }
 
+fn divide(a: i32, b: i32) -> Result<i32, String> {
+    if b == 0 {
+        Err("Cannot divide with zero".to_string())
+    } else {
+        Ok(a / b)
+    }
+}
+
 
 fn sum(a: i32, b: i32) -> i32 {
     a + b
@@ -43,16 +51,20 @@ pub fn day_003() {
     let square_area = area(Shapes::Square(5.3));
     println!("enum shapes: {:.2}", square_area);
 
+    // function pointer
     let pointer_multiply: fn(a: i32) -> i32 = mutiply;
     let result = pointer_multiply(3);
     println!("function pointer multiply: {}", result);
 
-
+// closures
     let factorial = |n: u32| -> u32 {
         (1..=n).product()
         };
     let n = 5;
     println!("The factorial of {} is {}", n, factorial(n)); 
-
+// error handling
+    let divided = divide(2, 0);
+    println!("{:?}", divided);
+//
     
 }
