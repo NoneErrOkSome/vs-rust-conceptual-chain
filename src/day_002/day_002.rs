@@ -67,11 +67,11 @@ pub fn day_002() {
     println!("{:?}", my_array);
 
 
-    {
-        let mut z: i32 = 2;
-        z = 3;
-        println!("{}, {}, {}", x, y, z);
-    }
+    // {
+    //     let mut z: i32 = 2;
+    //     z = 3;
+    //     println!("{}, {}, {}", x, y, z);
+    // }
 
     println!("{}, {}, {}, {}", zero, one, two, three);
 
