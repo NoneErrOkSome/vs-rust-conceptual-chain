@@ -1,14 +1,4 @@
-enum Shapes {
-    Rectangle(f64, f64),
-    Square(f64),
-}
 
-fn area(shape: Shapes) -> f64 {
-    match shape {
-        Shapes::Rectangle(width, height) => width * height,
-        Shapes::Square(width) => width * width, 
-    }
-}
 
 fn divide(a: i32, b: i32) -> Result<i32, String> {
     if b == 0 {
@@ -46,10 +36,7 @@ pub fn day_003() {
     let odd_even = odd_even(4);
     println!("odd_even: {}", odd_even);
 
-    let cal_area = area(Shapes::Rectangle(3.3, 3.3));
-    println!("enum shapes: {:.2}", cal_area);
-    let square_area = area(Shapes::Square(5.3));
-    println!("enum shapes: {:.2}", square_area);
+
 
 // function pointer
     let pointer_multiply: fn(a: i32) -> i32 = mutiply;
