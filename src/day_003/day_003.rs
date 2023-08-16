@@ -51,7 +51,7 @@ pub fn day_003() {
     let square_area = area(Shapes::Square(5.3));
     println!("enum shapes: {:.2}", square_area);
 
-    // function pointer
+// function pointer
     let pointer_multiply: fn(a: i32) -> i32 = mutiply;
     let result = pointer_multiply(3);
     println!("function pointer multiply: {}", result);
@@ -62,9 +62,22 @@ pub fn day_003() {
         };
     let n = 5;
     println!("The factorial of {} is {}", n, factorial(n)); 
+
 // error handling
     let divided = divide(2, 0);
     println!("{:?}", divided);
-//
+
+// Recursion
+    let n = 5;
+    println!("The factorial of {} is {}", n, factorial(n));
     
+}
+
+#[allow(dead_code)]
+fn factorial(n: u64) -> u64 {
+    if n == 0 {
+        1 // Base case: if n is 0, return 1
+    } else {
+        n * factorial(n - 1) // Recursive case: multiply n by the factorial of (n-1)
+    }
 }
