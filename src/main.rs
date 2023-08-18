@@ -70,4 +70,32 @@ fn main() {
     day_005::task7::task57();
     day_005::task8::task58();
     day_005::task9::task59();
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+let mut x = 10;
+
+
+while x < 10 {
+    println!("hello");
+    x += 1;
+}
+
+
+
 }
