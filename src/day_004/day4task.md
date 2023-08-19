@@ -28,3 +28,6 @@ Design a simple text-based game (like a guessing game) that utilizes various con
 
 ### Summary
 These tasks are designed to test your understanding of Rust's control flow constructs. Make sure to approach each task methodically, applying the appropriate control structure for the given problem. Feel free to experiment with different solutions and don't hesitate to ask if you need guidance or clarification on any task. Happy coding! 🎉
+
+
+---
