@@ -4,11 +4,12 @@
 // Iterate over the vector using a for loop and print each task.
 
 pub fn task47() {
-    if !cfg!(feature = "task47") {
+    if !cfg!(feature = "task47") {return;}
+    
         let vec: Vec<i32> = vec![1,2,3,4,5];
         for i in &vec {
             println!("{}", i);
         }
 
-    }
+        println!("{:?}", vec);
 }
