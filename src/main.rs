@@ -35,8 +35,25 @@ mod day_005 {
     pub mod task7;
     pub mod task8;
     pub mod task9;
+}
+
+
+mod day_006 {
+    pub mod task0;
 
 }
+
+mod day_007 {
+    pub mod task0;
+}
+
+mod day_008 {
+    pub mod task0;
+    pub mod task1;
+}
+
+
+
 
 fn main() {
     day_001::day_001::day_001(); 
@@ -71,6 +88,11 @@ fn main() {
     day_005::task8::task58();
     day_005::task9::task59();
 
+    day_006::task0::task60();
+    day_007::task0::task70();
+
+    day_008::task0::task80();
+    day_008::task1::task81();
 
 
 
@@ -84,17 +106,6 @@ fn main() {
 
 
 
-
-
-
-
-let mut x = 10;
-
-
-while x < 10 {
-    println!("hello");
-    x += 1;
-}
 
 
 

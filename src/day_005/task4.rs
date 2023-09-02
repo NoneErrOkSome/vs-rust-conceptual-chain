@@ -1,9 +1,9 @@
-fn longer<'a>(s1: &'a str, s2: &'a str) {
+fn longer<'a>(s1: &'a str, s2: &'a str) -> &'a str {
 
     if s1.len() > s2.len() {
-        println!("s1 has {} letter, s2 has {} letter", s1.len(), s2.len());
+        s1
     } else {
-        println!("s2 has {} letter, s1 has {} letter", s2.len(), s1.len());
+        s2
     }
 }
 
@@ -13,6 +13,7 @@ pub fn task54() {
 
     let a = "haha";
     let b = "ha";
-    longer(a, b);
+    let result = longer(a, b);
+    println!("{} ", result );
 
 }
